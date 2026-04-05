@@ -72,6 +72,7 @@ a {
     flex-direction: row;
     gap: 20px;
     justify-content: space-around;
+    padding: 50px;
 }
 
 .card-img {
@@ -92,18 +93,19 @@ a {
 
 .big-quote {
     background-color: #E5E7EB;
-    padding: 60px 20px;
+    padding: 60px 50px;
 }
 
 .quote-text {
     /* font-size: 2.5vw; */
-    font-size: clamp(1.2rem, 2.5vw, 2rem); 
-    padding: 15px;
+    font-size: clamp(1.2rem, 2vw, 2rem); 
     font-style: oblique;
+    text-align: center;
 }
 
 .quote-author {
     font-weight: bold;
     text-align: right;
-    padding: 10px;
+    /* Fix the positioning in a different way : */
+    padding: 10px 50px;
 }
