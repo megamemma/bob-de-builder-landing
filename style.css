@@ -32,7 +32,15 @@ a {
     padding: 15px;
 }
 
-.intro {
+.sign-up-button {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+
+.hero {
     background-color:#1F2937;
     color: white;
     display: flex;
@@ -45,17 +53,18 @@ a {
 }
 
 /* Flex: 1 on .intro-signup and Flex: 1 on intro-image make  it 50/50 */
-.intro-signup, .intro-image {
+.hero-text, .hero-media {
     flex: 1;
     min-width: 300px;
 }
 
-.intro-image {
+.hero-media {
     overflow: hidden;
     padding: 20px;
+    max-width: 500px;
 }
 
-.intro-image img {
+.hero-media img {
     width: 100%;
     height: auto;
 }
@@ -84,28 +93,51 @@ a {
 }
 
 .card {
-    width: 150px; }
-
-.banner {
-    background-color: #3882F6;
-    color: white;
+    width: 150px; 
 }
 
-.big-quote {
+.testimonial {
     background-color: #E5E7EB;
     padding: 60px 50px;
 }
 
-.quote-text {
-    /* font-size: 2.5vw; */
+.testimonial-text {
     font-size: clamp(1.2rem, 2vw, 2rem); 
     font-style: oblique;
     text-align: center;
+    /* max-width:  80%; */
 }
 
-.quote-author {
+.testimonial-author {
     font-weight: bold;
     text-align: right;
     /* Fix the positioning in a different way : */
     padding: 10px 50px;
 }
+
+
+.cta {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+    background-color: #3882F6;
+    color: white;
+    width: 70%;
+    padding: 40px;
+    border-radius: 20px;
+    /* max-width: */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-radius: */
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+}
+
+
