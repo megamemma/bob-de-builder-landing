@@ -11,6 +11,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-links {
@@ -20,6 +21,11 @@ body {
     padding: 10px;
 }
 
+a {
+    text-decoration-style: none;
+    color: white;
+}
+
 .header-logo {
     font-size: clamp(1.2rem, 2.5vw, 2rem); 
     font-weight: 700;
@@ -27,34 +33,31 @@ body {
 }
 
 .intro {
+    background-color:#1F2937;
+    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px;
-    background-color:#1F2937;
-    color: white;
+    gap: 40px;
+    flex-wrap: wrap;
+    /* May be temporary: */
+    padding-left: 30px;
 }
 
-.intro-signup {
-    padding: 20px;
-    max-width: 50%;
+/* Flex: 1 on .intro-signup and Flex: 1 on intro-image make  it 50/50 */
+.intro-signup, .intro-image {
+    flex: 1;
+    min-width: 300px;
 }
 
 .intro-image {
-    width: 300px;
-    height: 200px;
     overflow: hidden;
+    padding: 20px;
 }
 
 .intro-image img {
     width: 100%;
     height: auto;
-    object-fit: cover;
-}
-
-.banner {
-    background-color: #3882F6;
-    color: white;
 }
 
 .gallery-title {
@@ -62,23 +65,6 @@ body {
     text-align: center;
     padding: 15px; 
     font-weight: 800;
-}
-
-.big-quote {
-    background-color: #E5E7EB;
-}
-
-.quote-text {
-    /* font-size: 2.5vw; */
-    font-size: clamp(1.2rem, 2.5vw, 2rem); 
-    padding: 15px;
-    font-style: oblique;
-}
-
-.quote-author {
-    font-weight: bold;
-    text-align: right;
-    padding: 10px;
 }
 
 .gallery-cards { 
@@ -98,3 +84,26 @@ body {
 
 .card {
     width: 150px; }
+
+.banner {
+    background-color: #3882F6;
+    color: white;
+}
+
+.big-quote {
+    background-color: #E5E7EB;
+    padding: 60px 20px;
+}
+
+.quote-text {
+    /* font-size: 2.5vw; */
+    font-size: clamp(1.2rem, 2.5vw, 2rem); 
+    padding: 15px;
+    font-style: oblique;
+}
+
+.quote-author {
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+}
