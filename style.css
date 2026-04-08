@@ -119,12 +119,13 @@ a:hover {
     font-size: clamp(1.2rem, 2vw, 1.5rem); 
     font-style: oblique;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .testimonial-author {
+    margin-top: 0;
     font-weight: bold;
     text-align: right;
-
 }
 
 
