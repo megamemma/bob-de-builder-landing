@@ -3,6 +3,12 @@ body {
     margin: 0;
 }
 
+.big-container {
+    max-width: ;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .header, .footer {
     background-color: #1F2937;
     color: white;
@@ -12,7 +18,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* pushes content away from screen edges */
     padding: 0 40px;
 }
 
@@ -38,22 +43,6 @@ a:hover {
     padding: 15px;
 }
 
-.sign-up-button {
-    background-color: transparent;
-    border-color: white;
-    border-radius: 5px;
-    color: white;
-    padding: 5px 10px;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-}
-
-.sign-up-button:hover {
-    background-color: rgba(255, 255, 255, 0.373);
-    color: #002333;
-    text-shadow:rgba(255, 255, 255, 0.373);
-}
-
 .hero {
     background-color:#1F2937;
     color: white;
@@ -62,8 +51,7 @@ a:hover {
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
-    /* May be temporary: */
-    padding-left: 30px;
+    padding: 0 40px;
 }
 
 /* Flex: 1 on .intro-signup and Flex: 1 on intro-image make  it 50/50 */
@@ -93,22 +81,28 @@ a:hover {
 .gallery-cards { 
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 70px;
+    justify-content: center;
     padding: 50px;
 }
 
+.card {
+    width: 150px; 
+}
+
 .card-img {
-    border: 2px solid blue;
+    border: 2px solid rgb(159, 159, 159);
     border-radius: 5px;
     /* object-fit: cover; */
     width: 100%;
     aspect-ratio: 1 / 1;
 }
 
-.card {
-    width: 150px; 
+.card-text {
+    text-align: center;
+    color: grey;
 }
+
 
 .testimonial {
     background-color: #E5E7EB;
@@ -117,11 +111,12 @@ a:hover {
 
 .testimonial-text, .testimonial-author {
     margin: 0 auto;
+    /* 60CH makes less wobbly! */
     max-width: 60ch;
 }
 
 .testimonial-text {
-    font-size: clamp(1.2rem, 2vw, 2rem); 
+    font-size: clamp(1.2rem, 2vw, 1.5rem); 
     font-style: oblique;
     text-align: center;
 }
@@ -142,14 +137,14 @@ a:hover {
 .banner {
     background-color: #3882F6;
     color: white;
-    width: 70%;
-    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 40px;
     border-radius: 20px;
-    /* max-width: */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-radius: */
 }
 
 .footer {
@@ -158,3 +153,18 @@ a:hover {
 }
 
 
+.sign-up-button {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.sign-up-button:hover {
+    background-color: rgba(255, 255, 255, 0.373);
+    color: #002333;
+    text-shadow:rgba(255, 255, 255, 0.373);
+}
