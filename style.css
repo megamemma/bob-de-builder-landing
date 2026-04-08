@@ -3,12 +3,6 @@ body {
     margin: 0;
 }
 
-.big-container {
-    max-width: ;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
 .header, .footer {
     background-color: #1F2937;
     color: white;
@@ -80,29 +74,34 @@ a:hover {
 
 .gallery-cards { 
     display: flex;
-    flex-direction: row;
-    gap: 70px;
+    gap: 30px;
     justify-content: center;
     padding: 50px;
+    flex-wrap: wrap;
 }
 
-.card {
-    width: 150px; 
+.card { 
+    width: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img {
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    width: 150px;
+    height: 150px;
     border: 2px solid rgb(159, 159, 159);
     border-radius: 5px;
-    /* object-fit: cover; */
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    image-rendering: high-quality;
+    image-rendering: -webkit-optimize-contrast; 
 }
 
 .card-text {
     text-align: center;
     color: grey;
 }
-
 
 .testimonial {
     background-color: #E5E7EB;
